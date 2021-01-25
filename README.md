@@ -11,3 +11,12 @@ We took our data from the "Global Parliamentary Report".
 
 The project contains our R scripts, a graph folder with .png file of our plot, a data folder with the .xls file of the dataset, a report in .Rmd and this README file.
 
+
+*******IMPORTANT
+
+This project was entirely created and worked on by the threee of us in a repository calle Class_ex_1 on Nicola's profile. All the commit history is visible there. 
+
+Here's the link to that original repo:
+https://github.com/CapitanDestro/Class_ex_1
+
+
