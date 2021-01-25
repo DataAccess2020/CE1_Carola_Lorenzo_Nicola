@@ -1,0 +1,103 @@
+---
+title: "Report Exercise 1"
+author: "Nicola Destro, Lorenzo Sioli, Carola Corti"
+date: "25/1/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+## Research Question
+
+Are National Parliaments representative of the population in relation to the age?
+
+
+## Hypothesis
+
+We wanted to see whether National parliaments were in line with the population distribution in terms of age.
+Our hypothesis was that, even with low variability, to a younger population would have corresponded a younger parliament.
+
+
+## Dataset
+
+We took our data from the "Global Parliamentary Report".
+We got .xls file containing data about several national parliaments in the world; the data included sex, age and profession of each PM. 
+
+
+## Procedure 
+### Data cleaning and processing
+
+After we loaded the required packages, we imported the data to furtherly modify them and focus our analysis on three countries: 
+
+1) Italy
+2) Netherlands 
+3) Iceland 
+
+
+Being Italy the country with the oldest population age in Europe; the Netherlands one whose population age is close to the european median; and Iceland the youngest.
+
+We wanted to compute the average PMs' age for our selected countries and compare it with the median age of the population.
+In order to do so we had to re-code the variable "AGE" as numeric.
+We grouped our data by "COUNTRY" and created a new dataframe with the new variable "avg_age".
+We manually inserted the median age of the population and coded it as a new variable ("ppl_mdn") and created a new dataframe.
+We then merged the two dfs for PMs' average and Population median age, and computed the difference between the two in a new variable.
+
+### Data visualization
+
+We proceeded in our analysis by displaying a bar chart.
+
+
+![fig 1](/Users/nicol/OneDrive/Desktop/UNIMI/Data_Access_and_Regulation/DAAR_exs/Class_ex_one/Figs/Graph_1.png)
+
+
+## Initial findings
+
+This initial analysis was enough to reject our hypothesis: we noticed that the average age of the Parliament Members was very similar for all of the three countries regardless of their remarkable difference in median age of the population.
+The PMs' age was, in all cases, around 50. This led us to think that maybe every European democracy could show similar results and be represented by politicians around that age.
+
+## Further analysis
+we went back to our original "Global Parliamentary Report" dataset and took in consideration 16 more european countries with similar political framework.
+We repeated the process conducted originally, computed the PMs' average age for all of our observations and created a new dataframe.
+
+### Data visulization part 2
+We plotted a bar chart showing all observations to inspect whether occurred significant differences in our newly expanded perspective.
+
+
+
+![fig 2](/Users/nicol/OneDrive/Desktop/UNIMI/Data_Access_and_Regulation/DAAR_exs/Class_ex_one/Figs/Graph_2.png)
+
+
+## Final findings
+As expected, this time, we saw that all of the analysed countries were very close in the average age of their representatives (between 48 and 52); with one exception, Malta.
+The Mediterranean island proved to be a meaningful outlier having  a median age of 42.2 for the population and an astonishingly low average age for the politicians, only 36.5 years old.
+
+
+
+
+
+
+
+
+
+
+
+
+### Issue with repositories
+We worked all weekend in Nicola's repo on Github. All our scripts and files have now been moved to the course page; for this reason the history of the commits could have been lost. In that case, please check out the original repo on Nicola's profile.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
